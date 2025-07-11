@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9fcd4;
+    margin: 0;
+    padding: 0;
+    padding-top: 160px; /* Aumentado para compensar totalmente a nav fixa */
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+.centralizada {
+    display: block;
+    margin: 20px auto;
+}
+
+
+header {
+    background-color: rgb(1, 167, 79);
+    padding: 20px; /* aumentei o padding para melhor visibilidade */
+    margin-top: 20px; /* isso garante que fique abaixo da nav */
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: fit-content;
+    max-width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2rem;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    z-index: 1000;
+    outline: 1px solid red;
+}
+iframe {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid rgb(1, 167, 79);
+    border-radius: 0
+}
+
+.caixa {
+    background-color: white;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 800px;
+    width: 90%; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.caixa-aprender {
+    background-color: #e9fcd4; /* verde claro */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.caixa-aprender h2 {
+    background-color: rgb(1, 167, 79); /* verde escuro */
+    color: white;
+    padding: 10px;
+    margin: -20px -20px 20px -20px; /* pra cobrir a borda da caixa */
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.lista-duas-colunas {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    line-height: 1.2; 
+}
+
+.lista-duas-colunas li {
+    margin: 1px 0;     
+    padding: 0;        
+}
+footer {
+    background-color: rgb(1, 167, 79);
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+    border-radius: 0;
+    margin: 4px;
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(169, 169, 169, 0.514);
+        }
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+        tbody > tr:nth-child(2n-1) {
+            background-color: rgb(219, 218, 218);
+        }
+        thead {
+            background-color: rgba(54, 54, 54, 0.884);
+            color: white;
+        }
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <caption>População das Unidades Federativas Brasileiras</caption>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 973 194</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 691</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 824 665</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <th class="num">212 583 750</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
